@@ -1,0 +1,54 @@
+.container {
+    padding: 0px 16px;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: -0.62px;
+    text-align: center;
+    color: var(--primaryBlue);
+    padding: 0px 20px;
+}
+
+.reasonsContainer {
+    margin-bottom: 45px;
+}
+
+.text {
+    padding: 10px 10px 50px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.reasonsTitle {
+    background-color: var(--paleRed);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    padding: 6px 0px 10px 0px;
+    border-radius: 39px;
+
+}
+
+.reasonsTitle span {
+    padding: 6px 23px 10px 23px;
+    background-color: var(--primaryRed);
+    border-radius: 39px;
+    color: #FFF;
+    margin-right: 10px;
+    letter-spacing: 0px;
+}
+
+.reasonsText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    opacity: 0.5;
+    margin-top: 8px;
+}
