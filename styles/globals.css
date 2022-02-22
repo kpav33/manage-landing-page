@@ -1,9 +1,25 @@
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root {
+  --primaryRed: hsl(12, 88%, 59%);
+  --primaryBlue: hsl(228, 39%, 23%);
+  --grayishBlue: hsl(227, 12%, 61%);
+  --darkBlue: hsl(233, 12%, 13%);
+  --paleRed: hsl(13, 100%, 96%);
+  --lightGray: hsl(0, 0%, 98%);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: black;
+  color: white;
 }
 
 a {
