@@ -1,0 +1,43 @@
+.container {
+    padding: 40px 24px 93px 24px;
+    background-image: url("/bg-tablet-pattern.svg"), url("/bg-tablet-pattern.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 120%, 90%;
+    background-position: top -130px right -140px, bottom left 250px;
+}
+
+.bannerTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerHeading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.bannerText {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    opacity: 0.5;
+    margin: 9px 0px 29px 0px;
+}
+
+.bannerButton {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    color: var(--lightGray);
+    padding: 12px 32px;
+    border-radius: 22px;
+    background-color: #F3603C;
+    border: none;
+    box-shadow: 0px 15px 15px -10px #FF9F8E;
+}
