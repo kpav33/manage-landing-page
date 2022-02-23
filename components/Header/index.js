@@ -29,25 +29,21 @@ export default function Header() {
         )}
       </div>
 
-      {menuClick && (
-        <div
-          className={styles.mobileMenuContainer}
-          onClick={() => setMenuClick(false)}
-        >
-          <nav
-            className={styles.mobileMenu}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <ul>
-              <li>Pricing</li>
-              <li>Product</li>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Community</li>
-            </ul>
-          </nav>
-        </div>
-      )}
+      <div
+        className={styles.mobileMenuContainer}
+        onClick={() => setMenuClick(false)}
+        style={{ opacity: menuClick ? 1 : 0, transition: "all 0.5s ease-out" }}
+      >
+        <nav className={styles.mobileMenu} onClick={(e) => e.stopPropagation()}>
+          <ul>
+            <li>Pricing</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }
