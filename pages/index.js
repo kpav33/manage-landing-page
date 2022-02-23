@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import ReasonsSection from "../components/ReasonsSection";
+import Simplify from "../components/Simplify";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         {/* <Header /> */}
         <Banner />
         <ReasonsSection />
+        <Simplify />
         <Footer />
         {/* <Image
           src="/bg-simplify-section-desktop.svg"

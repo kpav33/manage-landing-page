@@ -1,0 +1,33 @@
+.container {
+    background: url("/bg-simplify-section-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: var(--primaryRed);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 28px;
+}
+
+.container h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 30px;
+}
+
+.container button {
+    border: none;
+    background-color: #FFF;
+    box-shadow: 0px 15px 15px -10px #DB5943;
+    border-radius: 22px;
+    color: var(--primaryRed);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 12px 32px;
+}
