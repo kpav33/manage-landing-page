@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import ReasonsSection from "../components/ReasonsSection";
 import Simplify from "../components/Simplify";
+import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         {/* <Header /> */}
         <Banner />
         <ReasonsSection />
+        <Testimonials />
         <Simplify />
         <Footer />
         {/* <Image

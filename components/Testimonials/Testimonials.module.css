@@ -1,0 +1,58 @@
+.container {
+    padding: 0px 20px 40px 20px;
+}
+
+.container h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 45px;
+    letter-spacing: -0.66px;
+    text-align: center;
+    color: var(--primaryBlue);
+    margin-bottom: 100px;
+}
+
+.testimonial {
+    background-color: var(--lightGray);
+    padding: 60px 20px 40px 20px;
+    position: relative;
+}
+
+.imageContainer {
+    position: absolute;
+    top: -15%;
+    left: 40%;
+    /* overflow: visible; */
+    /* overflow-y: visible; */
+}
+
+.testimonial h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--primaryBlue);
+    opacity: 0.5;
+}
+/* 
+.embla {
+    overflow-x: hidden; 
+    overflow-y: visible !important;
+    overflow: visible;
+} */
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    position: relative;
+    flex: 0 0 100%;
+}
