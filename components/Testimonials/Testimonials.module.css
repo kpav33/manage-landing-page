@@ -18,6 +18,13 @@
     position: relative;
 }
 
+@media only screen and (min-width: 992px) {
+    .testimonial {
+        height: 220px;
+        padding: 60px 20px 40px 20px;;
+    }
+}
+
 .imageContainer {
     position: absolute;
     top: -15%;
@@ -55,4 +62,44 @@
 .embla__slide {
     position: relative;
     flex: 0 0 100%;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .embla {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .embla__slide {
+        flex: 0 0 35%;
+        /* margin-right: 30px; */
+        margin-right: 30px;
+    }
+}
+
+.testimonialsButton {
+    display: none;
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width: 992px) {
+    .testimonialsButton {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19px;
+        color: var(--lightGray);
+        padding: 12px 32px;
+        border-radius: 22px;
+        background-color: #F3603C;
+        border: none;
+        box-shadow: 0px 15px 15px -10px #ff9f8e;
+        margin: 60px auto 100px auto;
+    }
+
+    .testimonialsButton:hover {
+        background-color: #F98F75;
+        cursor: pointer;
+    }
 }
