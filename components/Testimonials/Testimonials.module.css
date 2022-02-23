@@ -9,7 +9,7 @@
     letter-spacing: -0.66px;
     text-align: center;
     color: var(--primaryBlue);
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .testimonial {
@@ -41,12 +41,12 @@
     color: var(--primaryBlue);
     opacity: 0.5;
 }
-/* 
+
 .embla {
-    overflow-x: hidden; 
-    overflow-y: visible !important;
-    overflow: visible;
-} */
+    overflow: hidden;
+    cursor: pointer;
+    padding-top: 40px;
+}
 
 .embla__container {
     display: flex;
