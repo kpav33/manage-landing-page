@@ -10,6 +10,19 @@
     padding: 90px 28px;
 }
 
+@media only screen and (min-width: 992px) {
+    .container {
+       display: grid;
+       grid-template: 1fr / 80% 20%;
+       gap: 150px;
+       padding: 60px 165px 60px 165px;
+    }
+
+    .container > h2 {
+        margin-right: 0px;
+    }
+}
+
 .container h2 {
     font-weight: 700;
     font-size: 40px;
@@ -19,6 +32,14 @@
     color: #FFF;
     margin-bottom: 30px;
 }
+
+@media only screen and (min-width: 992px) {
+    .container h2 {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+}
+
 
 .container button {
     border: none;
@@ -30,4 +51,12 @@
     font-size: 13px;
     line-height: 19px;
     padding: 12px 32px;
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width: 992px) {
+    .container button:hover {
+        cursor: pointer;
+        color: rgba(242, 95, 58, 0.5);
+    }
 }
