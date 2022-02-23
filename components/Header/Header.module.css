@@ -6,3 +6,44 @@
     padding: 0px 8px;
     margin-bottom: 45px;
 }
+
+.hamburgerContainer {
+    height: 22px;
+    transition: all 0.5s;
+    z-index: 100;
+}
+
+.mobileMenuContainer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0.33%, rgba(0, 0, 0, 0.599049) 99.79%);
+    z-index: 5;
+}
+
+.mobileMenu {
+    position: absolute;
+    margin: 100px 24px 0px 24px;
+    background-color: #FFF;
+    color: var(--primaryBlue);
+    border-radius: 4px;
+    z-index: 10;
+    padding: 40px 20px 16px 20px;
+    width: 85%;
+    height: 290px;
+    margin-left: 28px;
+    /* height: 100vh; */
+    /* margin-top: 380px; */
+    /* border: 1px solid black */
+}
+
+.mobileMenu li {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    text-align: center;
+    padding-bottom: 24px;
+}
