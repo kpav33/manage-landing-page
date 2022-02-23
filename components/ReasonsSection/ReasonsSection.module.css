@@ -2,6 +2,25 @@
     padding: 0px 16px;
 }
 
+@media only screen and (min-width: 992px) {
+    .container {
+        padding: 0px 130px;
+        background-image: url("/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: bottom -280px left -380px;
+        overflow: visible;
+    }
+
+    .container > div {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        gap: 120px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
 .heading {
     font-weight: 800;
     font-size: 30px;
@@ -10,6 +29,15 @@
     text-align: center;
     color: var(--primaryBlue);
     padding: 0px 20px;
+}
+
+@media only screen and (min-width: 992px) {
+    .heading {
+        padding: 0px;
+        text-align: left;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
 }
 
 .reasonsContainer {
@@ -25,6 +53,14 @@
     opacity: 0.5;
 }
 
+@media only screen and (min-width: 992px) {
+    .text {
+        text-align: left;
+        padding: 0px;
+        line-height: 24px;
+    }
+}
+
 .reasonsTitle {
     background-color: var(--paleRed);
     font-weight: 700;
@@ -34,6 +70,12 @@
     padding: 6px 0px 10px 0px;
     border-radius: 39px;
 
+}
+
+@media only screen and (min-width: 992px) {
+    .reasonsTitle {
+        background-color: white;
+    }
 }
 
 .reasonsTitle span {
@@ -51,4 +93,10 @@
     line-height: 28px;
     opacity: 0.5;
     margin-top: 8px;
+}
+
+@media only screen and (min-width: 992px) {
+    .reasonsText {
+        line-height: 26px;
+    }
 }
