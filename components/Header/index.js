@@ -44,6 +44,17 @@ export default function Header() {
           </ul>
         </nav>
       </div>
+
+      <div className={styles.desktopMenuContainer}>
+        <ul>
+          <li>Pricing</li>
+          <li>Product</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Community</li>
+        </ul>
+      </div>
+      <button className={styles.menuButton}>Get Started</button>
     </header>
   );
 }

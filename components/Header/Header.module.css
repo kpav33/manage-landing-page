@@ -48,12 +48,59 @@
     padding-bottom: 24px;
 }
 
+.desktopMenuContainer {
+    display: none;
+}
+
+.menuButton {
+    display: none;
+    transition: all 0.5s;
+}
+
 @media only screen and (min-width: 992px) {
+    .menuButton:hover {
+        background-color: #F98F75;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto 100px auto;
+    }
+
     .hamburgerContainer {
         display: none;
     }
 
     .mobileMenuContainer {
         display: none;
+    }
+
+    .desktopMenuContainer {
+        display: block;
+    }
+
+    .desktopMenuContainer ul {
+        display: grid;
+        grid-template: 1fr / repeat(5, 1fr);
+        gap: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .menuButton {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19px;
+        color: var(--lightGray);
+        padding: 12px 32px;
+        border-radius: 22px;
+        background-color: #F3603C;
+        border: none;
+        box-shadow: 0px 15px 15px -10px #ff9f8e;
     }
 } 

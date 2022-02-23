@@ -6,11 +6,45 @@
     background-position: top -130px right -140px, bottom left 250px;
 }
 
+@media only screen and (min-width: 992px) {
+    .container {
+        padding: 56px 130px 120px 130px;
+        background-image: url("/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: top -100px right -100px;
+    }
+
+    .container > div {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        gap: 50px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .imageContainer {
+        grid-row: 1;
+        grid-column: 2;
+    }
+}
+
 .bannerTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .bannerTextContainer {
+       justify-content: center;
+       align-items: flex-start;
+       text-align: left;
+       grid-column: 1;
+       grid-row: 1;
+    }
 }
 
 .bannerHeading {
@@ -18,14 +52,14 @@
     font-weight: 700;
     line-height: 50px;
     letter-spacing: -1px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .bannerText {
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    text-align: center;
+    /* text-align: center; */
     opacity: 0.5;
     margin: 9px 0px 29px 0px;
 }
@@ -40,4 +74,12 @@
     background-color: #F3603C;
     border: none;
     box-shadow: 0px 15px 15px -10px #FF9F8E;
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width: 992px) {
+    .bannerButton:hover {
+        background-color: #F98F75;
+        cursor: pointer;
+    }
 }
