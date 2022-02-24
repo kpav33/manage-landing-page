@@ -5,12 +5,15 @@ import Image from "next/image";
 import styles from "./Testimonials.module.css";
 
 export default function Testimonials() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
-  //   useEffect(() => {
-  //     if (emblaApi) {
-  //       return;
-  //     }
-  //   }, [emblaApi]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+    draggable: true,
+  });
+  // useEffect(() => {
+  //   if (emblaApi) {
+  //     return;
+  //   }
+  // }, [emblaApi]);
 
   return (
     <section className={styles.container}>
