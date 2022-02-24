@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
 
@@ -51,7 +52,11 @@ export default function Header() {
           <li>Product</li>
           <li>About Us</li>
           <li>Careers</li>
-          <li>Community</li>
+          <li>
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
+          </li>
         </ul>
       </div>
       <button className={styles.menuButton}>Get Started</button>
