@@ -50,9 +50,9 @@
 }
 
 .embla {
-    /* overflow: hidden; */
+    overflow: hidden;
     cursor: pointer;
-    /* padding-top: 40px; */
+    padding-top: 40px;
 }
 
 .embla__container {
