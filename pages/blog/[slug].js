@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import matter from "gray-matter";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 import styles from "../../styles/BlogPage.module.css";
 
@@ -20,6 +21,14 @@ export default function Blog({ frontmatter, markdown }) {
       <h1>{frontmatter.title}</h1>
       <span>{frontmatter.date}</span>
       <hr />
+      {frontmatter?.thumbnail && (
+        <Image
+          src={frontmatter.thumbnail}
+          alt="Post thumbnail image"
+          height={300}
+          width={400}
+        ></Image>
+      )}
       <ReactMarkdown>{markdown}</ReactMarkdown>
     </div>
   );
