@@ -6,7 +6,7 @@ export default function ReasonsSection() {
   return (
     <section className={styles.container}>
       <div>
-        <div>
+        <div className={styles.textContainer}>
           <h2 className={styles.heading}>
             What&apos;s different about Manage?
           </h2>
