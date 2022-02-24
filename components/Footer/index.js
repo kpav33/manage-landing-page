@@ -37,6 +37,19 @@ export default function Footer() {
           <p>Privacy Policy</p>
         </div>
       </nav>
+      <nav className={styles.navigationContainerDesktop}>
+        <div>
+          <p>Home</p>
+          <p>Pricing</p>
+          <p>Products</p>
+          <p>About Us</p>
+        </div>
+        <div>
+          <p>Careers</p>
+          <p>Community</p>
+          <p>Privacy Policy</p>
+        </div>
+      </nav>
       <div className={styles.socialsContainer}>
         <Image
           src="/icon-facebook.svg"
