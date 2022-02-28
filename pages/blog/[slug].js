@@ -57,10 +57,25 @@ export async function getStaticPaths() {
   //   { params: { slug: 'how-to-train-a-dragon' }},
   //   { params: { slug: 'how-to-catch-a-pokemon' }},
   // ]
-  const paths = filesInProjects.map((file) => {
+  // const paths = filesInProjects.map((file) => {
+  //   const filename = file.slice(0, file.indexOf("."));
+  //   const en = { params: { slug: filename }, locale: "en" };
+  //   const fr = { params: { slug: filename }, locale: "fr" };
+  //   const si = { params: { slug: filename }, locale: "si" };
+  //   return { params: { slug: filename }, locale: "en" };
+  // });
+
+  // Make static paths work with localization
+  const paths = [];
+  const pathsFor = filesInProjects.forEach((file) => {
     const filename = file.slice(0, file.indexOf("."));
-    return { params: { slug: filename } };
+    console.log(filename);
+    paths.push({ params: { slug: filename }, locale: "en" });
+    paths.push({ params: { slug: filename }, locale: "fr" });
+    paths.push({ params: { slug: filename }, locale: "si" });
   });
+
+  // console.log(pathsTest);
 
   return {
     paths,
