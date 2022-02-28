@@ -5,7 +5,7 @@ import Header from "../Header";
 
 import styles from "./Banner.module.css";
 
-export default function Banner() {
+export default function Banner({ t }) {
   return (
     <section className={styles.container}>
       <Header />
@@ -19,14 +19,9 @@ export default function Banner() {
           />
         </div>
         <div className={styles.bannerTextContainer}>
-          <h1 className={styles.bannerHeading}>
-            Bring everyone together to build better products.
-          </h1>
-          <p className={styles.bannerText}>
-            Manage makes it simple for software teams to play day-to-day tasks
-            while keeping the larger team goals in view.
-          </p>
-          <button className={styles.bannerButton}>Get Started</button>
+          <h1 className={styles.bannerHeading}>{t.title}</h1>
+          <p className={styles.bannerText}>{t.subtitle}</p>
+          <button className={styles.bannerButton}>{t.button}</button>
         </div>
       </div>
     </section>

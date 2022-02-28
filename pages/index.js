@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -8,7 +9,16 @@ import ReasonsSection from "../components/ReasonsSection";
 import Simplify from "../components/Simplify";
 import Testimonials from "../components/Testimonials";
 
+import en from "../locales/en";
+import fr from "../locales/fr";
+import si from "../locales/si";
+
 export default function Home() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en" ? en : locale === "fr" ? fr : si;
+  // console.log(locale, t);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -22,7 +32,7 @@ export default function Home() {
 
       <main>
         {/* <Header /> */}
-        <Banner />
+        <Banner t={t} />
         <ReasonsSection />
         <Testimonials />
         <Simplify />

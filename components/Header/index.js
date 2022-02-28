@@ -1,10 +1,26 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
+// import en from "../../locales/en";
+// import fr from "../../locales/fr";
+// import si from "../../locales/si";
+
 import styles from "./Header.module.css";
 
 export default function Header() {
   const [menuClick, setMenuClick] = useState(false);
+
+  const router = useRouter();
+  const { locale } = router;
+  // const t = locale === "en" ? en : locale === "fr" ? fr : si;
+  // console.log(locale);
+
+  const changeLanguage = (e) => {
+    const locale = e.target.value;
+    router.push(router.pathname, router.asPath, { locale });
+  };
 
   return (
     <header className={styles.container}>
@@ -58,6 +74,11 @@ export default function Header() {
             </Link>
           </li>
         </ul>
+        <select onChange={changeLanguage} defaultValue={locale}>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="si">SI</option>
+        </select>
       </div>
       <button className={styles.menuButton}>Get Started</button>
     </header>
